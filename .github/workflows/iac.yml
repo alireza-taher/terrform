@@ -33,10 +33,6 @@ jobs:
           version: '>= 363.0.0'
   
       - name: 'Use gcloud CLI'
-        run: 'gcloud info'
+        run: 'gcloud compute disks list'
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       #- uses: actions/checkout@v4
-
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
