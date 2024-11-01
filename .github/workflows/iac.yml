@@ -29,6 +29,7 @@ jobs:
         with:
           project_id: 'kloudpal'
           workload_identity_provider: 'projects/55839892624/locations/global/workloadIdentityPools/github/providers/my-repo'
+          service_account: 'github-actions@kloudpal.iam.gserviceaccount.com'
       
       - name: 'Set up Cloud SDK'
         uses: 'google-github-actions/setup-gcloud@v2'
